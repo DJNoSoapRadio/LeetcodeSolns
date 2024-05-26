@@ -19,10 +19,9 @@ class Solution:
         #if p.val == q.val:
          #   return same(p.right, q.right) and same(p.left, q.left)
           
-        if p.val == q.val:
+        if p == q:
             return True
         if p is None or q is None or p.val != q.val:
             return False
         return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 # @lc code=end
-
